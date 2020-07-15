@@ -8,7 +8,7 @@ from PyQt5.uic import loadUi
 class Window(QMainWindow):
 	def __init__(self):
 		super(Window, self).__init__()
-		loadUi('interface/mainwindow.ui', self)
+		loadUi('mainwindow.ui', self)
 		self.setWindowIcon(QIcon('red.png'))
 		self.HelloWorldBT.clicked.connect(self.helloWindow)
 		self.show()
@@ -19,7 +19,7 @@ class Window(QMainWindow):
 class hello(QMainWindow):
 	def __init__(self):
 		super(hello, self).__init__()
-		loadUi('interface/hello.ui', self)
+		loadUi('hello.ui', self)
 		self.show()
 
 
